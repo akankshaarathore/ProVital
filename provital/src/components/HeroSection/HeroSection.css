@@ -1,0 +1,54 @@
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.image-columns {
+  display: flex;
+  gap: 20px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-column img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.scroll-down {
+  animation: scrollDown 10s linear infinite;
+}
+
+.scroll-up {
+  animation: scrollUp 10s linear infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform : translateY(0%);
+  }
+}

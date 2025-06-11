@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import Taskbar from './components/Taskbar';
+import Taskbar from './components/Taskbar/Taskbar';
+import HeroSection from './components/HeroSection/HeroSection';
 
 function App() {
   return (
     <div className="App">
       <Taskbar/>
-      <div style={{padding: '80px'}}>
-        <span>main content</span>
-      </div>
+      <HeroSection/>
     </div>
   );
 }
