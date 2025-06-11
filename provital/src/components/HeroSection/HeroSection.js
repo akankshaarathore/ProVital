@@ -18,6 +18,7 @@ const HeroSection = () => {
   ];
 
   return (
+    <>
     <div className='hero'>
       <div className='image-columns'>
         <div className='image-column scroll-down'>
@@ -27,7 +28,15 @@ const HeroSection = () => {
           {[...imagesCol2, ...imagesCol2].map((src,i) => (<img key = {`col2-${i}`} src = {src} alt = {`col2-${i}`}/>))}
         </div>
       </div>
+      <div className='hero-text'>
+        <h1>Book an appointment with <span className='highlight-gradient'>lifestyle medicine</span> experts</h1>
+        <p>Optimize your lifestyle and reverse chronic diseases.</p>
+      </div>
     </div>
+
+    <div className='gradient-line'></div>
+    </>
+    
   );
 };
 

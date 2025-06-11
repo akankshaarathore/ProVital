@@ -2,16 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 80px;
+  padding: 40px 60px;
   position: relative;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .image-columns {
   display: flex;
   gap: 20px;
-  height: 320px;
+  height: 600px;
   overflow: hidden;
+  width: 700px;
+  flex-shrink: 0;
 }
 
 .image-column {
@@ -21,10 +23,10 @@
 }
 
 .image-column img {
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .scroll-down {
@@ -51,4 +53,43 @@
   100% {
     transform : translateY(0%);
   }
+}
+
+.hero-text {
+  max-width: 800px;
+  height: 400px;
+  margin-left: 50px;
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: black
+}
+
+.hero-text p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #707070;
+}
+
+.highlight-gradient {
+  background: linear-gradient(to right, #1173B3, #0CB9B3);
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-line {
+  width: 120%;
+  height: 40px;
+  margin: 5px 0;
+  background: linear-gradient(to right, #F0C971, #E5688C);
+  transform: rotate(-3deg);
+  transform-origin: left;
+  margin-top: -50px;
+  margin-left: -5%;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
 }
