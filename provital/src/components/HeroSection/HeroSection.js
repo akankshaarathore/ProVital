@@ -34,6 +34,30 @@ const HeroSection = () => {
       </div>
     </div>
 
+    <div className='outer-container'>
+        <div className='inner-container'>
+            <div className="input-box large-input">
+            <img src="/images/search-btn.jpg" alt="Search" className="icon" />
+            <span className="input-text">Condition, procedure, speciality...</span>
+            </div>
+
+        <div className="input-box medium-input">
+          <img src="/images/loc-btn.jpg" alt="Location" className="icon" />
+          <span className="input-text">City, state, or zipcode</span>
+        </div>
+
+        <div className="input-box small-input">
+          <img src="/images/health-btn.jpg" alt="Date" className="icon" />
+          <span className="input-text">Insurance carrier</span>
+        </div>
+
+        <div className="search-button-wrapper">
+          <button className="search-button">
+          <img src="/images/search-btn.jpg" alt="Search Icon" className="button-icon" />
+          Find now</button>
+        </div>
+        </div>
+    </div>
     <div className='gradient-line'></div>
     </>
     
