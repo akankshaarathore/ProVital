@@ -175,7 +175,7 @@
   height: 60px;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(to right, #4683D0, #7CD0A2);
+  background: linear-gradient(to left, #4683D0, #7CD0A2);
   color: white;
   font-size: 16px;
   font-weight: 400;

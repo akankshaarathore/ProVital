@@ -1,0 +1,28 @@
+.capsules-container {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  width: 1250px;
+  height: 31px;
+  margin: 20px auto;
+}
+
+.capsule {
+  width: 166.86px;
+  height: 31px;
+  padding: 5.08px 16.94px;
+  border-radius: 25px;
+  color: #707070;
+  border: 0.85px solid #D2D2D2;
+  background-color: white;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.capsule.active {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
