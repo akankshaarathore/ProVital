@@ -8,6 +8,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
 }
 
 .card {
@@ -20,6 +21,7 @@
   background-color: #fff;
   text-align: left;
   margin-left: 50px ;
+  scroll-snap-align: start;
 }
 
 .card img {
@@ -75,4 +77,47 @@
 .card-image-container {
   position: relative;
  
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 80vw;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card h4 {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .card p {
+    width: auto;
+    font-size: 14px;
+  }
+
+  .cards-container {
+    gap: 10px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90vw;
+    height: auto;
+  }
+
+  .card h4 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
 }

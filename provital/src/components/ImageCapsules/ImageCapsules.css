@@ -36,3 +36,30 @@
   color: white;
   border-color: black;
 }
+
+@media (max-width: 1250px) {
+  .capsules-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 10px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .capsules-row {
+    flex-wrap: nowrap;
+  }
+
+  .capsule {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .capsule {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+}

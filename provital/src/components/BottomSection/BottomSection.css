@@ -36,3 +36,31 @@
 .normal-text {
   color: #707070;
 }
+
+@media (max-width: 768px) {
+  .sub-headings {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .sh-1 {
+    font-size: 14px;
+    width: auto;
+  }
+
+  .sh-2 {
+    font-size: 22px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .sh-1 {
+    font-size: 13px;
+  }
+
+  .sh-2 {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
