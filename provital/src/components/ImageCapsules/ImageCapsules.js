@@ -19,16 +19,18 @@ const ImageCapsules = ({ onSelect }) => {
   };
 
   return (
-    <div className="capsules-container">
-      {capsuleData.map((label) => (
-        <button
-          key={label}
-          className={`capsule ${active === label ? 'active' : ''}`}
-          onClick={() => handleClick(label)}
-        >
-          {label}
-        </button>
-      ))}
+    <div className="capsules-scroll-container">
+      <div className="capsules-row">
+        {capsuleData.map((label) => (
+          <button
+            key={label}
+            className={`capsule ${active === label ? 'active' : ''}`}
+            onClick={() => handleClick(label)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

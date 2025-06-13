@@ -29,7 +29,10 @@ function App() {
       <div className="cards-container">
         {cards.map((card, index) => (
           <div key={index} className="card">
-            <img src={card.image} alt={card.title} />
+            <div className="card-image-container">
+          <img src={card.image} alt={card.title} className="card-main-image" />
+          <img src={card.tagImage} alt="tag" className="card-tag" />
+            </div>
             <h4>{card.title}</h4>
             <p>{card.description}</p>
           </div>
